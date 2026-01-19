@@ -1,0 +1,311 @@
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Raleway", sans-serif; */
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1 {
+  margin-bottom: 48px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.header-logo {
+  padding: 24px 0;
+}
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+}
+.logo-part {
+  color: #2e2f42;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: block;
+  padding: 24px 0;
+}
+.contacts {
+  font-style: normal;
+}
+.contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: block;
+  padding: 24px 0;
+}
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+.page-footer {
+  background-color: #2e2f42;
+}
+.p-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.footer-logo .logo-part-footer {
+  color: #f4f4fd;
+}
+.footer-logo {
+  margin-bottom: 16px;
+}
+.section-one {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+.header-one {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.button-section-one {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  /* часто ще потрібно */
+  outline: none;
+}
+
+.button-section-one:hover,
+.button-section-one:focus {
+  background-color: #404bbf;
+}
+.section-three {
+  background-color: #f4f4fd;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.list-item-sec-three {
+  background-color: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+/* .container { 
+  max-width; 
+  padding-left;  
+  padding-right;  
+  margin-left;  
+  margin-right;  
+} */
+
+/* homework 3 */
+
+.container-header {
+  display: flex;
+  align-items: center; /* по центру по высоте */
+  justify-content: space-between; /* nav слева, contacts справа */
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px; /* расстояние logo -> menu (как в макете) */
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contacts {
+  font-style: normal; /* address по умолчанию курсив */
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-section-two {
+  display: flex;
+  gap: 24px;
+}
+.list-section-two > li {
+  width: calc((100% - 72px) / 4);
+}
+.sec-two {
+  margin-bottom: 8px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-list > li {
+  width: calc((100% - 72px) / 4);
+}
+
+.text-team {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px 32px 16px;
+  gap: 8px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px; /* вертикальний 48, горизонтальний 24 (часто так) */
+}
+.text-portfolio {
+  padding: 32px 16px 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.container-footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.container {
+  max-width: 1158px; /* ширина из макета */
+  margin: 0 auto; /* центрирует по горизонтали */
+  padding: 0 15px; /* чтобы контент не прилипал к краям */
+}
+.section {
+  padding: 120px 0;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.section-one .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* вот это центрирует кнопку и заголовок */
+}
+.header-one {
+  max-width: 496px;
+}
+.header-logo {
+  display: block;
+  padding: 24px 0;
+}
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.p-footer {
+  max-width: 264px;
+  margin-top: 0;
+}
+.list-item-sec-three {
+  border-radius: 0 0 4px 4px;
+  overflow: hidden; /* щоб фото/фон не вилізали за радіус */
+}
+.portfolio-card {
+  width: calc((100% - 48px) / 3); /* 2 gaps по 24 = 48 */
+}
