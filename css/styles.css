@@ -171,8 +171,10 @@ p {
 
 .list-item-sec-three {
   background-color: #fff;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .name {
   font-weight: 500;
@@ -287,6 +289,20 @@ p {
   flex-direction: column;
   align-items: center; /* вот это центрирует кнопку и заголовок */
 }
+.section-one {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/people-office\ 1.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2e2f42; /* на случай если картинка не загрузится */
+}
+
 .header-one {
   max-width: 496px;
 }
@@ -300,7 +316,7 @@ p {
 }
 .p-footer {
   max-width: 264px;
-  margin-top: 0;
+  margin-top: 16px;
 }
 .list-item-sec-three {
   border-radius: 0 0 4px 4px;
@@ -308,4 +324,146 @@ p {
 }
 .portfolio-card {
   width: calc((100% - 48px) / 3); /* 2 gaps по 24 = 48 */
+}
+.features-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 112px;
+  margin-bottom: 8px;
+
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.features-icon {
+  fill: #2e2f42;
+}
+.our-team-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.our-team-icon-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.our-team-icon {
+  fill: #ffffff;
+}
+.our-team-icon-link {
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-icon-link:hover,
+.our-team-icon-link:focus {
+  background-color: #404bbf;
+}
+
+.our-team-icon-case {
+  width: 40px;
+  height: 40px;
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 120px; /* расстояние между блоками */
+}
+.footer-social-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+/* Иконка в футере остаётся белой */
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+/* НЕАКТИВНОЕ состояние */
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #4d5ae5; /* чистый пурпур */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.current {
+  color: #404bbf;
+}
+
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
