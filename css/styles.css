@@ -295,7 +295,7 @@ p {
 
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/people-office\ 1.jpg");
+    url("../images/people-office-1.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -389,18 +389,6 @@ p {
   font-weight: 500;
   color: #ffffff;
 }
-.footer-social-link {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .footer-social-icon {
   fill: #ffffff;
@@ -417,17 +405,13 @@ p {
   background-color: #31d0aa;
 }
 
-/* Иконка в футере остаётся белой */
-.footer-social-icon {
-  fill: #f4f4fd;
-}
 /* НЕАКТИВНОЕ состояние */
 .footer-social-link {
   width: 40px;
   height: 40px;
 
   display: flex;
-  gap: 16px;
+
   align-items: center;
   justify-content: center;
 
@@ -435,6 +419,10 @@ p {
   background-color: #4d5ae5; /* чистый пурпур */
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
 }
 
 .nav-link {
